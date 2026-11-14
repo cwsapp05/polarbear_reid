@@ -1,0 +1,1008 @@
+{
+  "target_std": 50.0,
+  "primary": {
+    "subset": "face_w>=24px",
+    "n_images": 885,
+    "n_sequences": 386,
+    "n_bears": 13,
+    "negatives": {
+      "all": {
+        "n_pos": 53553,
+        "n_neg": 336906,
+        "auroc": {
+          "megadescriptor": 0.7675238665270046,
+          "megadescriptor_grey": 0.7247586547984827,
+          "megadescriptor_cnorm": 0.7793391213324032,
+          "megadescriptor_masked": 0.7358967608642641,
+          "megadescriptor_masked_grey": 0.7237718370236893,
+          "megadescriptor_masked_cnorm": 0.7381031717091782,
+          "bearid": 0.6597933068236553
+        },
+        "bootstrap": {
+          "sequence": {
+            "ci95": {
+              "megadescriptor": [
+                0.7469827477889456,
+                0.7896607672058434
+              ],
+              "megadescriptor_grey": [
+                0.6973916717564832,
+                0.7507566778734892
+              ],
+              "megadescriptor_cnorm": [
+                0.758152535424426,
+                0.8021620328334246
+              ],
+              "megadescriptor_masked": [
+                0.7104712780122227,
+                0.7620097197162012
+              ],
+              "megadescriptor_masked_grey": [
+                0.6976226175171282,
+                0.7512663213432359
+              ],
+              "megadescriptor_masked_cnorm": [
+                0.7154141385437351,
+                0.762082732877317
+              ],
+              "bearid": [
+                0.6386154835061233,
+                0.6804747536836461
+              ]
+            },
+            "deltas": {
+              "megadescriptor_grey|megadescriptor": {
+                "point": -0.04276521172852188,
+                "ci95": [
+                  -0.0653648907961797,
+                  -0.021049143737117682
+                ],
+                "p_bootstrap": 0.0
+              },
+              "megadescriptor_cnorm|megadescriptor": {
+                "point": 0.01181525480539869,
+                "ci95": [
+                  0.0071213583838740605,
+                  0.01654673113863539
+                ],
+                "p_bootstrap": 0.0
+              },
+              "megadescriptor_masked_grey|megadescriptor_masked": {
+                "point": -0.012124923840574842,
+                "ci95": [
+                  -0.03366692703823688,
+                  0.010276560390240127
+                ],
+                "p_bootstrap": 0.292
+              },
+              "megadescriptor_masked_cnorm|megadescriptor_masked": {
+                "point": 0.0022064108449140196,
+                "ci95": [
+                  -0.011345207104508483,
+                  0.01692222896561532
+                ],
+                "p_bootstrap": 0.702
+              },
+              "megadescriptor_masked_cnorm|megadescriptor": {
+                "point": -0.029420694817826387,
+                "ci95": [
+                  -0.04810864034104893,
+                  -0.009304848566538577
+                ],
+                "p_bootstrap": 0.002
+              },
+              "bearid|megadescriptor": {
+                "point": -0.10773055970334922,
+                "ci95": [
+                  -0.13929882100961705,
+                  -0.08052802803831878
+                ],
+                "p_bootstrap": 0.0
+              },
+              "bearid|megadescriptor_cnorm": {
+                "point": -0.1195458145087479,
+                "ci95": [
+                  -0.15031784134815188,
+                  -0.09177355321531565
+                ],
+                "p_bootstrap": 0.0
+              },
+              "bearid|megadescriptor_masked_cnorm": {
+                "point": -0.07830986488552283,
+                "ci95": [
+                  -0.10903903930083862,
+                  -0.04993910394454411
+                ],
+                "p_bootstrap": 0.0
+              }
+            }
+          },
+          "identity": {
+            "ci95": {
+              "megadescriptor": [
+                0.7116480389721648,
+                0.8207284871705535
+              ],
+              "megadescriptor_grey": [
+                0.6721134721407511,
+                0.7896506449664391
+              ],
+              "megadescriptor_cnorm": [
+                0.7218315945077812,
+                0.8315773411162282
+              ],
+              "megadescriptor_masked": [
+                0.6662784393345655,
+                0.7942675364902737
+              ],
+              "megadescriptor_masked_grey": [
+                0.6660803767362048,
+                0.788180996604562
+              ],
+              "megadescriptor_masked_cnorm": [
+                0.6680715748666498,
+                0.7946058329057618
+              ],
+              "bearid": [
+                0.6168970122673669,
+                0.6925863481493882
+              ]
+            },
+            "deltas": {
+              "megadescriptor_grey|megadescriptor": {
+                "point": -0.04276521172852188,
+                "ci95": [
+                  -0.09716122995633965,
+                  0.017093871585993972
+                ],
+                "p_bootstrap": 0.196
+              },
+              "megadescriptor_cnorm|megadescriptor": {
+                "point": 0.01181525480539869,
+                "ci95": [
+                  0.0017700518741732127,
+                  0.018781732342127287
+                ],
+                "p_bootstrap": 0.034
+              },
+              "megadescriptor_masked_grey|megadescriptor_masked": {
+                "point": -0.012124923840574842,
+                "ci95": [
+                  -0.05984429264361734,
+                  0.03374932797815144
+                ],
+                "p_bootstrap": 0.638
+              },
+              "megadescriptor_masked_cnorm|megadescriptor_masked": {
+                "point": 0.0022064108449140196,
+                "ci95": [
+                  -0.02284563944647398,
+                  0.02431100873427042
+                ],
+                "p_bootstrap": 0.958
+              },
+              "megadescriptor_masked_cnorm|megadescriptor": {
+                "point": -0.029420694817826387,
+                "ci95": [
+                  -0.07447267797570535,
+                  -0.006304961569802839
+                ],
+                "p_bootstrap": 0.01
+              },
+              "bearid|megadescriptor": {
+                "point": -0.10773055970334922,
+                "ci95": [
+                  -0.1690867519000265,
+                  -0.06041869882558871
+                ],
+                "p_bootstrap": 0.0
+              },
+              "bearid|megadescriptor_cnorm": {
+                "point": -0.1195458145087479,
+                "ci95": [
+                  -0.1796496698733804,
+                  -0.07103073755163611
+                ],
+                "p_bootstrap": 0.0
+              },
+              "bearid|megadescriptor_masked_cnorm": {
+                "point": -0.07830986488552283,
+                "ci95": [
+                  -0.14644639815918006,
+                  -0.01756942067445215
+                ],
+                "p_bootstrap": 0.026
+              }
+            }
+          }
+        }
+      },
+      "within_zoo": {
+        "n_pos": 53553,
+        "n_neg": 43081,
+        "auroc": {
+          "megadescriptor": 0.6223989536883406,
+          "megadescriptor_grey": 0.6109556097362254,
+          "megadescriptor_cnorm": 0.624140438563398,
+          "megadescriptor_masked": 0.586306812513414,
+          "megadescriptor_masked_grey": 0.6021724306351577,
+          "megadescriptor_masked_cnorm": 0.5974896308597932,
+          "bearid": 0.6181589841169346
+        },
+        "bootstrap": {
+          "sequence": {
+            "ci95": {
+              "megadescriptor": [
+                0.5921172252825637,
+                0.6551672789889058
+              ],
+              "megadescriptor_grey": [
+                0.5819371837299662,
+                0.6402269863534022
+              ],
+              "megadescriptor_cnorm": [
+                0.5911548818386867,
+                0.657910334648428
+              ],
+              "megadescriptor_masked": [
+                0.5546877777848792,
+                0.6165872167957174
+              ],
+              "megadescriptor_masked_grey": [
+                0.5728060342024589,
+                0.6344466991938533
+              ],
+              "megadescriptor_masked_cnorm": [
+                0.5699764171076701,
+                0.6257531271432969
+              ],
+              "bearid": [
+                0.5891511371917078,
+                0.6444885082761539
+              ]
+            },
+            "deltas": {
+              "megadescriptor_grey|megadescriptor": {
+                "point": -0.011443343952115215,
+                "ci95": [
+                  -0.037981833819229635,
+                  0.015169081893786527
+                ],
+                "p_bootstrap": 0.424
+              },
+              "megadescriptor_cnorm|megadescriptor": {
+                "point": 0.0017414848750573197,
+                "ci95": [
+                  -0.005513570989344061,
+                  0.009160476754697233
+                ],
+                "p_bootstrap": 0.626
+              },
+              "megadescriptor_masked_grey|megadescriptor_masked": {
+                "point": 0.015865618121743696,
+                "ci95": [
+                  -0.011139860679387,
+                  0.04386499231282476
+                ],
+                "p_bootstrap": 0.252
+              },
+              "megadescriptor_masked_cnorm|megadescriptor_masked": {
+                "point": 0.011182818346379242,
+                "ci95": [
+                  -0.006090127080555291,
+                  0.028821914553692256
+                ],
+                "p_bootstrap": 0.224
+              },
+              "megadescriptor_masked_cnorm|megadescriptor": {
+                "point": -0.02490932282854741,
+                "ci95": [
+                  -0.05302221517168241,
+                  0.0023350562915056016
+                ],
+                "p_bootstrap": 0.074
+              },
+              "bearid|megadescriptor": {
+                "point": -0.004239969571406044,
+                "ci95": [
+                  -0.047226687789680845,
+                  0.03556258071839281
+                ],
+                "p_bootstrap": 0.794
+              },
+              "bearid|megadescriptor_cnorm": {
+                "point": -0.0059814544464633634,
+                "ci95": [
+                  -0.048602750100044195,
+                  0.03230814107485981
+                ],
+                "p_bootstrap": 0.742
+              },
+              "bearid|megadescriptor_masked_cnorm": {
+                "point": 0.020669353257141365,
+                "ci95": [
+                  -0.02137085160240343,
+                  0.05909802212347492
+                ],
+                "p_bootstrap": 0.314
+              }
+            }
+          },
+          "identity": {
+            "ci95": {
+              "megadescriptor": [
+                0.5581947534999906,
+                0.8217193310635735
+              ],
+              "megadescriptor_grey": [
+                0.4973112009294774,
+                0.7739157467207848
+              ],
+              "megadescriptor_cnorm": [
+                0.5626976003993428,
+                0.8172686529862814
+              ],
+              "megadescriptor_masked": [
+                0.5038903534617316,
+                0.7705615376189038
+              ],
+              "megadescriptor_masked_grey": [
+                0.48898822362570904,
+                0.8037393478870455
+              ],
+              "megadescriptor_masked_cnorm": [
+                0.5170816111118722,
+                0.7739594188297164
+              ],
+              "bearid": [
+                0.519686559027493,
+                0.6856510925871333
+              ]
+            },
+            "deltas": {
+              "megadescriptor_grey|megadescriptor": {
+                "point": -0.011443343952115215,
+                "ci95": [
+                  -0.14162619881766456,
+                  0.08166949316214546
+                ],
+                "p_bootstrap": 0.6004016064257028
+              },
+              "megadescriptor_cnorm|megadescriptor": {
+                "point": 0.0017414848750573197,
+                "ci95": [
+                  -0.00982412466274288,
+                  0.02159429482374932
+                ],
+                "p_bootstrap": 0.6666666666666666
+              },
+              "megadescriptor_masked_grey|megadescriptor_masked": {
+                "point": 0.015865618121743696,
+                "ci95": [
+                  -0.13845532922424558,
+                  0.14991866325913894
+                ],
+                "p_bootstrap": 0.8975903614457831
+              },
+              "megadescriptor_masked_cnorm|megadescriptor_masked": {
+                "point": 0.011182818346379242,
+                "ci95": [
+                  -0.0660774295499785,
+                  0.06576455879865443
+                ],
+                "p_bootstrap": 0.8092369477911646
+              },
+              "megadescriptor_masked_cnorm|megadescriptor": {
+                "point": -0.02490932282854741,
+                "ci95": [
+                  -0.09794366955884184,
+                  0.0306152271052421
+                ],
+                "p_bootstrap": 0.39156626506024095
+              },
+              "bearid|megadescriptor": {
+                "point": -0.004239969571406044,
+                "ci95": [
+                  -0.2320804892153366,
+                  0.10843167923226352
+                ],
+                "p_bootstrap": 0.8875502008032129
+              },
+              "bearid|megadescriptor_cnorm": {
+                "point": -0.0059814544464633634,
+                "ci95": [
+                  -0.2357475251495819,
+                  0.10662296009457542
+                ],
+                "p_bootstrap": 0.9076305220883534
+              },
+              "bearid|megadescriptor_masked_cnorm": {
+                "point": 0.020669353257141365,
+                "ci95": [
+                  -0.20350655141193344,
+                  0.15465932700286478
+                ],
+                "p_bootstrap": 0.9779116465863453
+              }
+            }
+          }
+        }
+      }
+    },
+    "gap": {
+      "sequence": {
+        "gap": {
+          "megadescriptor": {
+            "point": 0.1451249128386639,
+            "ci95": [
+              0.12289946441649299,
+              0.16718273965701766
+            ]
+          },
+          "megadescriptor_grey": {
+            "point": 0.11380304506225725,
+            "ci95": [
+              0.09194142337931012,
+              0.13710451714615404
+            ]
+          },
+          "megadescriptor_cnorm": {
+            "point": 0.15519868276900528,
+            "ci95": [
+              0.1314055535347489,
+              0.1781836239538427
+            ]
+          },
+          "megadescriptor_masked": {
+            "point": 0.14958994835085015,
+            "ci95": [
+              0.1271814857943703,
+              0.17187272735473846
+            ]
+          },
+          "megadescriptor_masked_grey": {
+            "point": 0.12159940638853162,
+            "ci95": [
+              0.0984927262040688,
+              0.14601146132680404
+            ]
+          },
+          "megadescriptor_masked_cnorm": {
+            "point": 0.14061354084938493,
+            "ci95": [
+              0.12128445349475694,
+              0.1614456590757254
+            ]
+          },
+          "bearid": {
+            "point": 0.04163432270672074,
+            "ci95": [
+              0.022070887860849316,
+              0.06258677192957422
+            ]
+          }
+        },
+        "change": {
+          "megadescriptor_grey|megadescriptor": {
+            "point": -0.031321867776406664,
+            "ci95": [
+              -0.056594320765268886,
+              -0.006189326689332604
+            ],
+            "p_bootstrap": 0.014
+          },
+          "megadescriptor_cnorm|megadescriptor": {
+            "point": 0.01007376993034137,
+            "ci95": [
+              0.004779597902361404,
+              0.015187146415580626
+            ],
+            "p_bootstrap": 0.0
+          },
+          "megadescriptor_masked_grey|megadescriptor_masked": {
+            "point": -0.027990541962318538,
+            "ci95": [
+              -0.050726061025920983,
+              -0.0025489540887634814
+            ],
+            "p_bootstrap": 0.036
+          },
+          "megadescriptor_masked_cnorm|megadescriptor_masked": {
+            "point": -0.008976407501465222,
+            "ci95": [
+              -0.023282889990467993,
+              0.0054947303136224646
+            ],
+            "p_bootstrap": 0.22
+          },
+          "megadescriptor_masked_cnorm|megadescriptor": {
+            "point": -0.004511371989278978,
+            "ci95": [
+              -0.026122520264274637,
+              0.017931345227464528
+            ],
+            "p_bootstrap": 0.698
+          },
+          "bearid|megadescriptor": {
+            "point": -0.10349059013194317,
+            "ci95": [
+              -0.1318947179297936,
+              -0.07570194177021328
+            ],
+            "p_bootstrap": 0.0
+          },
+          "bearid|megadescriptor_cnorm": {
+            "point": -0.11356436006228454,
+            "ci95": [
+              -0.1422383519841479,
+              -0.08412050198990784
+            ],
+            "p_bootstrap": 0.0
+          },
+          "bearid|megadescriptor_masked_cnorm": {
+            "point": -0.0989792181426642,
+            "ci95": [
+              -0.12493182730043764,
+              -0.07214200076278442
+            ],
+            "p_bootstrap": 0.0
+          }
+        }
+      },
+      "identity": {
+        "gap": {
+          "megadescriptor": {
+            "point": 0.1451249128386639,
+            "ci95": [
+              -0.03389010798967561,
+              0.2072140310134011
+            ]
+          },
+          "megadescriptor_grey": {
+            "point": 0.11380304506225725,
+            "ci95": [
+              -0.012406342738296511,
+              0.2014165420054425
+            ]
+          },
+          "megadescriptor_cnorm": {
+            "point": 0.15519868276900528,
+            "ci95": [
+              -0.0230027854335703,
+              0.2179137567790258
+            ]
+          },
+          "megadescriptor_masked": {
+            "point": 0.14958994835085015,
+            "ci95": [
+              -0.023968469530106253,
+              0.2283417354366385
+            ]
+          },
+          "megadescriptor_masked_grey": {
+            "point": 0.12159940638853162,
+            "ci95": [
+              -0.06238742848258163,
+              0.22278318386891632
+            ]
+          },
+          "megadescriptor_masked_cnorm": {
+            "point": 0.14061354084938493,
+            "ci95": [
+              -0.029194588420061035,
+              0.20557905203327678
+            ]
+          },
+          "bearid": {
+            "point": 0.04163432270672074,
+            "ci95": [
+              -0.025657693498276842,
+              0.12993004497075858
+            ]
+          }
+        },
+        "change": {
+          "megadescriptor_grey|megadescriptor": {
+            "point": -0.031321867776406664,
+            "ci95": [
+              -0.11864704038576177,
+              0.08683996579572685
+            ],
+            "p_bootstrap": 0.8112449799196787
+          },
+          "megadescriptor_cnorm|megadescriptor": {
+            "point": 0.01007376993034137,
+            "ci95": [
+              -0.0112863737744164,
+              0.019879665802284993
+            ],
+            "p_bootstrap": 0.20080321285140562
+          },
+          "megadescriptor_masked_grey|megadescriptor_masked": {
+            "point": -0.027990541962318538,
+            "ci95": [
+              -0.1386491337602954,
+              0.10684562974564117
+            ],
+            "p_bootstrap": 0.8112449799196787
+          },
+          "megadescriptor_masked_cnorm|megadescriptor_masked": {
+            "point": -0.008976407501465222,
+            "ci95": [
+              -0.05544571370082801,
+              0.05582153187404243
+            ],
+            "p_bootstrap": 0.9136546184738956
+          },
+          "megadescriptor_masked_cnorm|megadescriptor": {
+            "point": -0.004511371989278978,
+            "ci95": [
+              -0.04798105841361177,
+              0.05384660309885703
+            ],
+            "p_bootstrap": 0.9959839357429718
+          },
+          "bearid|megadescriptor": {
+            "point": -0.10349059013194317,
+            "ci95": [
+              -0.22814032079490612,
+              0.10989612749689191
+            ],
+            "p_bootstrap": 0.44779116465863456
+          },
+          "bearid|megadescriptor_cnorm": {
+            "point": -0.11356436006228454,
+            "ci95": [
+              -0.23364591659166262,
+              0.10448680766760376
+            ],
+            "p_bootstrap": 0.43373493975903615
+          },
+          "bearid|megadescriptor_masked_cnorm": {
+            "point": -0.0989792181426642,
+            "ci95": [
+              -0.2235458309452682,
+              0.10846314626703155
+            ],
+            "p_bootstrap": 0.30120481927710846
+          }
+        }
+      }
+    },
+    "ranking": {
+      "megadescriptor": {
+        "rank1": 0.8124293785310734,
+        "mAP": 0.44245470034600043,
+        "n_queries": 885
+      },
+      "megadescriptor_grey": {
+        "rank1": 0.7830508474576271,
+        "mAP": 0.39927420464377184,
+        "n_queries": 885
+      },
+      "megadescriptor_cnorm": {
+        "rank1": 0.8192090395480226,
+        "mAP": 0.45467442925171764,
+        "n_queries": 885
+      },
+      "megadescriptor_masked": {
+        "rank1": 0.8056497175141243,
+        "mAP": 0.42489540066648734,
+        "n_queries": 885
+      },
+      "megadescriptor_masked_grey": {
+        "rank1": 0.7807909604519774,
+        "mAP": 0.38909138592229475,
+        "n_queries": 885
+      },
+      "megadescriptor_masked_cnorm": {
+        "rank1": 0.7966101694915254,
+        "mAP": 0.4185550270281997,
+        "n_queries": 885
+      },
+      "bearid": {
+        "rank1": 0.631638418079096,
+        "mAP": 0.29847819362708866,
+        "n_queries": 885
+      }
+    }
+  },
+  "all_frames": {
+    "subset": "all_frames",
+    "n_images": 4293,
+    "n_sequences": 1431,
+    "n_bears": 13,
+    "negatives": {
+      "all": {
+        "n_pos": 705429,
+        "n_neg": 8503056,
+        "auroc": {
+          "megadescriptor": 0.6737117509921493,
+          "megadescriptor_grey": 0.6481251765743069,
+          "megadescriptor_cnorm": 0.6766374719827806,
+          "megadescriptor_masked": 0.6613132228894077,
+          "megadescriptor_masked_grey": 0.634201784915641,
+          "megadescriptor_masked_cnorm": 0.6553402839482322
+        },
+        "bootstrap": {
+          "sequence": {
+            "ci95": {
+              "megadescriptor": [
+                0.6622528670819289,
+                0.6854688068684489
+              ],
+              "megadescriptor_grey": [
+                0.6377912116384137,
+                0.6588456694532201
+              ],
+              "megadescriptor_cnorm": [
+                0.6645556835755881,
+                0.6887250544188742
+              ],
+              "megadescriptor_masked": [
+                0.6503174838264623,
+                0.6730386134595304
+              ],
+              "megadescriptor_masked_grey": [
+                0.62258026391762,
+                0.6458892192793113
+              ],
+              "megadescriptor_masked_cnorm": [
+                0.6442735330729908,
+                0.665583343941937
+              ]
+            },
+            "deltas": {
+              "megadescriptor_grey|megadescriptor": {
+                "point": -0.0255865744178424,
+                "ci95": [
+                  -0.032227934377392915,
+                  -0.019146807632249442
+                ],
+                "p_bootstrap": 0.0
+              },
+              "megadescriptor_cnorm|megadescriptor": {
+                "point": 0.0029257209906312642,
+                "ci95": [
+                  0.0007512436946649938,
+                  0.00505434742243113
+                ],
+                "p_bootstrap": 0.002
+              },
+              "megadescriptor_masked_grey|megadescriptor_masked": {
+                "point": -0.027111437973766694,
+                "ci95": [
+                  -0.03242857970722709,
+                  -0.021435953744930823
+                ],
+                "p_bootstrap": 0.0
+              },
+              "megadescriptor_masked_cnorm|megadescriptor_masked": {
+                "point": -0.005972938941175565,
+                "ci95": [
+                  -0.011367359298729528,
+                  -0.000663687386606618
+                ],
+                "p_bootstrap": 0.028
+              },
+              "megadescriptor_masked_cnorm|megadescriptor": {
+                "point": -0.018371467043917122,
+                "ci95": [
+                  -0.02613711673928518,
+                  -0.010800583997324384
+                ],
+                "p_bootstrap": 0.0
+              }
+            }
+          }
+        }
+      },
+      "within_zoo": {
+        "n_pos": 705429,
+        "n_neg": 864279,
+        "auroc": {
+          "megadescriptor": 0.604802458669655,
+          "megadescriptor_grey": 0.5797104882611743,
+          "megadescriptor_cnorm": 0.6067499494876216,
+          "megadescriptor_masked": 0.5820182118747257,
+          "megadescriptor_masked_grey": 0.5716025730789951,
+          "megadescriptor_masked_cnorm": 0.5880560924315097
+        },
+        "bootstrap": {
+          "sequence": {
+            "ci95": {
+              "megadescriptor": [
+                0.5939508288275583,
+                0.615950429277088
+              ],
+              "megadescriptor_grey": [
+                0.5715458467939661,
+                0.5882949560266191
+              ],
+              "megadescriptor_cnorm": [
+                0.5960792868976293,
+                0.6175421527743534
+              ],
+              "megadescriptor_masked": [
+                0.5732214317391829,
+                0.5912214058885122
+              ],
+              "megadescriptor_masked_grey": [
+                0.5628589536937788,
+                0.5804741934103328
+              ],
+              "megadescriptor_masked_cnorm": [
+                0.578157928247057,
+                0.5969555983154199
+              ]
+            },
+            "deltas": {
+              "megadescriptor_grey|megadescriptor": {
+                "point": -0.025091970408480657,
+                "ci95": [
+                  -0.03215094911328173,
+                  -0.018079898624291296
+                ],
+                "p_bootstrap": 0.0
+              },
+              "megadescriptor_cnorm|megadescriptor": {
+                "point": 0.001947490817966635,
+                "ci95": [
+                  -0.00029416505524842637,
+                  0.004079472020672235
+                ],
+                "p_bootstrap": 0.09
+              },
+              "megadescriptor_masked_grey|megadescriptor_masked": {
+                "point": -0.010415638795730597,
+                "ci95": [
+                  -0.01569595968848653,
+                  -0.004749313696606232
+                ],
+                "p_bootstrap": 0.0
+              },
+              "megadescriptor_masked_cnorm|megadescriptor_masked": {
+                "point": 0.006037880556784003,
+                "ci95": [
+                  -0.00022428516110693062,
+                  0.011787052345873534
+                ],
+                "p_bootstrap": 0.062
+              },
+              "megadescriptor_masked_cnorm|megadescriptor": {
+                "point": -0.016746366238145294,
+                "ci95": [
+                  -0.025736783065994435,
+                  -0.007277484899066964
+                ],
+                "p_bootstrap": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    "gap": {
+      "sequence": {
+        "gap": {
+          "megadescriptor": {
+            "point": 0.06890929232249432,
+            "ci95": [
+              0.05906467513159055,
+              0.07988096553561855
+            ]
+          },
+          "megadescriptor_grey": {
+            "point": 0.06841468831313258,
+            "ci95": [
+              0.05998078311792852,
+              0.07772841006723012
+            ]
+          },
+          "megadescriptor_cnorm": {
+            "point": 0.06988752249515895,
+            "ci95": [
+              0.0594314125844729,
+              0.08085769631229338
+            ]
+          },
+          "megadescriptor_masked": {
+            "point": 0.07929501101468206,
+            "ci95": [
+              0.07123660209044266,
+              0.08781046997773272
+            ]
+          },
+          "megadescriptor_masked_grey": {
+            "point": 0.06259921183664596,
+            "ci95": [
+              0.05382875372421446,
+              0.07205868883333219
+            ]
+          },
+          "megadescriptor_masked_cnorm": {
+            "point": 0.06728419151672249,
+            "ci95": [
+              0.05800377855367503,
+              0.07597690915759912
+            ]
+          }
+        },
+        "change": {
+          "megadescriptor_grey|megadescriptor": {
+            "point": -0.0004946040093617432,
+            "ci95": [
+              -0.007114740032544587,
+              0.006216481971948138
+            ],
+            "p_bootstrap": 0.862
+          },
+          "megadescriptor_cnorm|megadescriptor": {
+            "point": 0.0009782301726646292,
+            "ci95": [
+              -0.0009603285403932262,
+              0.002847092557828992
+            ],
+            "p_bootstrap": 0.322
+          },
+          "megadescriptor_masked_grey|megadescriptor_masked": {
+            "point": -0.016695799178036097,
+            "ci95": [
+              -0.02232433517812757,
+              -0.01125076264932605
+            ],
+            "p_bootstrap": 0.0
+          },
+          "megadescriptor_masked_cnorm|megadescriptor_masked": {
+            "point": -0.012010819497959568,
+            "ci95": [
+              -0.01709426375614856,
+              -0.006920997305242317
+            ],
+            "p_bootstrap": 0.0
+          },
+          "megadescriptor_masked_cnorm|megadescriptor": {
+            "point": -0.0016251008057718286,
+            "ci95": [
+              -0.008491215891406908,
+              0.004813151045714049
+            ],
+            "p_bootstrap": 0.608
+          }
+        }
+      }
+    },
+    "ranking": {
+      "megadescriptor": {
+        "rank1": 0.8283251805264384,
+        "mAP": 0.26038079970426053,
+        "n_queries": 4293
+      },
+      "megadescriptor_grey": {
+        "rank1": 0.771022594921966,
+        "mAP": 0.2263912909606806,
+        "n_queries": 4293
+      },
+      "megadescriptor_cnorm": {
+        "rank1": 0.824132308409038,
+        "mAP": 0.2618262678349753,
+        "n_queries": 4293
+      },
+      "megadescriptor_masked": {
+        "rank1": 0.7803400885161892,
+        "mAP": 0.24079069385196192,
+        "n_queries": 4293
+      },
+      "megadescriptor_masked_grey": {
+        "rank1": 0.7179128814348941,
+        "mAP": 0.21199553564541251,
+        "n_queries": 4293
+      },
+      "megadescriptor_masked_cnorm": {
+        "rank1": 0.7784765897973445,
+        "mAP": 0.22630206744072276,
+        "n_queries": 4293
+      }
+    }
+  }
+}

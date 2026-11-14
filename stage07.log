@@ -1,0 +1,5 @@
+11:34:31 INFO pbreid.masked: [face_w>=24px | all] megadescriptor: 0.768  megadescriptor_masked: 0.736  bearid: 0.660  fused: 0.781  fused_masked: 0.760
+11:35:02 INFO pbreid.masked: [face_w>=24px | within_zoo] megadescriptor: 0.622  megadescriptor_masked: 0.586  bearid: 0.618  fused: 0.664  fused_masked: 0.638
+11:47:50 INFO pbreid.masked: [all_frames | all] megadescriptor: 0.674  megadescriptor_masked: 0.661
+11:49:44 INFO pbreid.masked: [all_frames | within_zoo] megadescriptor: 0.605  megadescriptor_masked: 0.582
+11:49:48 INFO pbreid.masked: Done. See C:\Users\Connor Sapp\Downloads\polarbear_reid\results\masked.md

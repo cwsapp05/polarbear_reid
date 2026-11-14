@@ -1,0 +1,3 @@
+Cloning into 'dlib'...
+error: chmod on /mnt/c/Users/Connor Sapp/Downloads/polarbear_reid/tools/dlib/.git/config.lock failed: Operation not permitted
+fatal: could not set 'core.filemode' to 'false'

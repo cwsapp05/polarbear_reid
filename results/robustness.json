@@ -1,0 +1,757 @@
+{
+  "subset": "face_w>=24px",
+  "n_images": 885,
+  "dropped_bears": [],
+  "composition": [
+    {
+      "zoo": "Tiergarten N\u00fcrnberg",
+      "identity": "Vera",
+      "images": 183,
+      "sequences": 76,
+      "image_share": 0.20677966101694914,
+      "pos_pair_share": 0.30810598846003023
+    },
+    {
+      "zoo": "Tierpark Neum\u00fcnster",
+      "identity": "Larissa",
+      "images": 171,
+      "sequences": 66,
+      "image_share": 0.19322033898305085,
+      "pos_pair_share": 0.26855638339588817
+    },
+    {
+      "zoo": "Tierpark Berlin",
+      "identity": "Tonja",
+      "images": 147,
+      "sequences": 55,
+      "image_share": 0.16610169491525423,
+      "pos_pair_share": 0.19786006386196853
+    },
+    {
+      "zoo": "Tierpark Neum\u00fcnster",
+      "identity": "Vitus",
+      "images": 101,
+      "sequences": 42,
+      "image_share": 0.11412429378531073,
+      "pos_pair_share": 0.09273056598136425
+    },
+    {
+      "zoo": "Tierpark Berlin",
+      "identity": "Hertha",
+      "images": 88,
+      "sequences": 48,
+      "image_share": 0.09943502824858758,
+      "pos_pair_share": 0.07047224245140328
+    },
+    {
+      "zoo": "Tiergarten N\u00fcrnberg",
+      "identity": "Nanuq",
+      "images": 61,
+      "sequences": 26,
+      "image_share": 0.06892655367231638,
+      "pos_pair_share": 0.03325677366347357
+    },
+    {
+      "zoo": "Tiergarten Sch\u00f6nbrunn",
+      "identity": "Nora",
+      "images": 40,
+      "sequences": 18,
+      "image_share": 0.04519774011299435,
+      "pos_pair_share": 0.013986144567064403
+    },
+    {
+      "zoo": "Zoo Hannover",
+      "identity": "Nana",
+      "images": 28,
+      "sequences": 16,
+      "image_share": 0.031638418079096044,
+      "pos_pair_share": 0.006759658655910967
+    },
+    {
+      "zoo": "Zoo Hannover",
+      "identity": "Milana",
+      "images": 23,
+      "sequences": 11,
+      "image_share": 0.02598870056497175,
+      "pos_pair_share": 0.004388176199279219
+    },
+    {
+      "zoo": "Tiergarten Sch\u00f6nbrunn",
+      "identity": "Finja",
+      "images": 15,
+      "sequences": 10,
+      "image_share": 0.01694915254237288,
+      "pos_pair_share": 0.0018486359307601815
+    },
+    {
+      "zoo": "Zoo Karlsruhe",
+      "identity": "Charlotte",
+      "images": 11,
+      "sequences": 7,
+      "image_share": 0.012429378531073447,
+      "pos_pair_share": 0.0009336545104849401
+    },
+    {
+      "zoo": "Zoo Karlsruhe",
+      "identity": "Lloyd",
+      "images": 10,
+      "sequences": 7,
+      "image_share": 0.011299435028248588,
+      "pos_pair_share": 0.0007842697888073497
+    },
+    {
+      "zoo": "Zoo Hannover",
+      "identity": "Sprinter",
+      "images": 7,
+      "sequences": 4,
+      "image_share": 0.007909604519774011,
+      "pos_pair_share": 0.00031744253356487964
+    }
+  ],
+  "modes": {
+    "all": {
+      "n_pos": 53553,
+      "n_neg": 336906,
+      "bootstrap": {
+        "sequence": {
+          "megadescriptor": {
+            "auroc": 0.7675238665270046,
+            "ci95": [
+              0.7469827477889456,
+              0.7896607672058434
+            ]
+          },
+          "bearid": {
+            "auroc": 0.6597933068236553,
+            "ci95": [
+              0.6386154835061233,
+              0.6804747536836461
+            ]
+          },
+          "fused": {
+            "auroc": 0.7814996872594652,
+            "ci95": [
+              0.761506707910089,
+              0.8000105769690261
+            ]
+          },
+          "bearid-megadescriptor": {
+            "point": -0.10773055970334922,
+            "ci95": [
+              -0.13929882100961705,
+              -0.08052802803831878
+            ],
+            "p_bootstrap": 0.0
+          },
+          "fused-megadescriptor": {
+            "point": 0.01397582073246062,
+            "ci95": [
+              -0.0010501762274231984,
+              0.027866470547477925
+            ],
+            "p_bootstrap": 0.064
+          },
+          "fused-bearid": {
+            "point": 0.12170638043580984,
+            "ci95": [
+              0.10581260367064273,
+              0.1393979789288679
+            ],
+            "p_bootstrap": 0.0
+          }
+        },
+        "identity": {
+          "megadescriptor": {
+            "auroc": 0.7675238665270046,
+            "ci95": [
+              0.7116480389721648,
+              0.8207284871705535
+            ]
+          },
+          "bearid": {
+            "auroc": 0.6597933068236553,
+            "ci95": [
+              0.6168970122673669,
+              0.6925863481493882
+            ]
+          },
+          "fused": {
+            "auroc": 0.7814996872594652,
+            "ci95": [
+              0.7194670429022236,
+              0.824517643182539
+            ]
+          },
+          "bearid-megadescriptor": {
+            "point": -0.10773055970334922,
+            "ci95": [
+              -0.1690867519000265,
+              -0.06041869882558871
+            ],
+            "p_bootstrap": 0.0
+          },
+          "fused-megadescriptor": {
+            "point": 0.01397582073246062,
+            "ci95": [
+              -0.015103984882116369,
+              0.033561325604349775
+            ],
+            "p_bootstrap": 0.308
+          },
+          "fused-bearid": {
+            "point": 0.12170638043580984,
+            "ci95": [
+              0.08709590076422068,
+              0.15959444638845297
+            ],
+            "p_bootstrap": 0.0
+          }
+        }
+      },
+      "balanced": {
+        "megadescriptor": 0.6999107048076959,
+        "bearid": 0.6250318929078126,
+        "fused": 0.7177465337245514
+      },
+      "leave_one_bear_out": [
+        {
+          "dropped": "Charlotte",
+          "megadescriptor": 0.7667164142862057,
+          "bearid": 0.6591377793046678,
+          "fused": 0.7805948670508589,
+          "bearid-megadescriptor": -0.10757863498153797,
+          "fused-megadescriptor": 0.01387845276465316
+        },
+        {
+          "dropped": "Finja",
+          "megadescriptor": 0.7663792555505538,
+          "bearid": 0.6593174155886158,
+          "fused": 0.780478805985584,
+          "bearid-megadescriptor": -0.10706183996193797,
+          "fused-megadescriptor": 0.014099550435030195
+        },
+        {
+          "dropped": "Hertha",
+          "megadescriptor": 0.7798804184525969,
+          "bearid": 0.6591239727095354,
+          "fused": 0.7912099820977058,
+          "bearid-megadescriptor": -0.12075644574306155,
+          "fused-megadescriptor": 0.011329563645108842
+        },
+        {
+          "dropped": "Larissa",
+          "megadescriptor": 0.7448979981159566,
+          "bearid": 0.652123493462491,
+          "fused": 0.7602628576316844,
+          "bearid-megadescriptor": -0.0927745046534656,
+          "fused-megadescriptor": 0.015364859515727858
+        },
+        {
+          "dropped": "Lloyd",
+          "megadescriptor": 0.7655340485711735,
+          "bearid": 0.6585390350650699,
+          "fused": 0.7796613911460732,
+          "bearid-megadescriptor": -0.10699501350610352,
+          "fused-megadescriptor": 0.014127342574899782
+        },
+        {
+          "dropped": "Milana",
+          "megadescriptor": 0.764951077599374,
+          "bearid": 0.6639304677515311,
+          "fused": 0.78199419202265,
+          "bearid-megadescriptor": -0.10102060984784289,
+          "fused-megadescriptor": 0.017043114423275996
+        },
+        {
+          "dropped": "Nana",
+          "megadescriptor": 0.7657391164051249,
+          "bearid": 0.6598030479196569,
+          "fused": 0.7810179279298917,
+          "bearid-megadescriptor": -0.105936068485468,
+          "fused-megadescriptor": 0.015278811524766733
+        },
+        {
+          "dropped": "Nanuq",
+          "megadescriptor": 0.7691011595786557,
+          "bearid": 0.6622494002374506,
+          "fused": 0.7839712967408563,
+          "bearid-megadescriptor": -0.10685175934120505,
+          "fused-megadescriptor": 0.014870137162200647
+        },
+        {
+          "dropped": "Nora",
+          "megadescriptor": 0.770234669129746,
+          "bearid": 0.6625451209409321,
+          "fused": 0.784861183767803,
+          "bearid-megadescriptor": -0.10768954818881393,
+          "fused-megadescriptor": 0.014626514638056975
+        },
+        {
+          "dropped": "Sprinter",
+          "megadescriptor": 0.766785294668505,
+          "bearid": 0.6615452254306714,
+          "fused": 0.781958508782993,
+          "bearid-megadescriptor": -0.10524006923783358,
+          "fused-megadescriptor": 0.01517321411448802
+        },
+        {
+          "dropped": "Tonja",
+          "megadescriptor": 0.7800290376977955,
+          "bearid": 0.6601822133351162,
+          "fused": 0.7905640028741496,
+          "bearid-megadescriptor": -0.11984682436267935,
+          "fused-megadescriptor": 0.010534965176354105
+        },
+        {
+          "dropped": "Vera",
+          "megadescriptor": 0.7618462648557022,
+          "bearid": 0.6641274185955387,
+          "fused": 0.7777160125592086,
+          "bearid-megadescriptor": -0.09771884626016347,
+          "fused-megadescriptor": 0.015869747703506465
+        },
+        {
+          "dropped": "Vitus",
+          "megadescriptor": 0.774252104327524,
+          "bearid": 0.6535116613771372,
+          "fused": 0.7823656999542977,
+          "bearid-megadescriptor": -0.12074044295038677,
+          "fused-megadescriptor": 0.008113595626773717
+        }
+      ],
+      "tuned_fusion": {
+        "folds": {
+          "Tiergarten N\u00fcrnberg": {
+            "w_megadescriptor": 0.65,
+            "train_auroc": 0.782443325213658,
+            "n_test_pairs": 185848
+          },
+          "Tiergarten Sch\u00f6nbrunn": {
+            "w_megadescriptor": 0.65,
+            "train_auroc": 0.7934589847982279,
+            "n_test_pairs": 47098
+          },
+          "Tierpark Berlin": {
+            "w_megadescriptor": 0.7,
+            "train_auroc": 0.8096782798470702,
+            "n_test_pairs": 180056
+          },
+          "Tierpark Neum\u00fcnster": {
+            "w_megadescriptor": 0.65,
+            "train_auroc": 0.7507862268218886,
+            "n_test_pairs": 203355
+          },
+          "Zoo Hannover": {
+            "w_megadescriptor": 0.65,
+            "train_auroc": 0.7895654607032895,
+            "n_test_pairs": 49581
+          },
+          "Zoo Karlsruhe": {
+            "w_megadescriptor": 0.65,
+            "train_auroc": 0.7885762432239487,
+            "n_test_pairs": 18346
+          }
+        },
+        "w_grid": [
+          0.0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.35,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.8,
+          0.85,
+          0.9,
+          0.95,
+          1.0
+        ],
+        "auroc": {
+          "megadescriptor": {
+            "auroc": 0.7675238665270046,
+            "ci95": [
+              0.7469827477889456,
+              0.7896607672058434
+            ]
+          },
+          "bearid": {
+            "auroc": 0.6597933068236553,
+            "ci95": [
+              0.6386154835061233,
+              0.6804747536836461
+            ]
+          },
+          "fused": {
+            "auroc": 0.7814996872594652,
+            "ci95": [
+              0.761506707910089,
+              0.8000105769690261
+            ]
+          },
+          "tuned": {
+            "auroc": 0.7918866525779097,
+            "ci95": [
+              0.7725083463780034,
+              0.8106909353901498
+            ]
+          }
+        },
+        "tuned-megadescriptor": {
+          "point": 0.02436278605090514,
+          "ci95": [
+            0.015151822005983993,
+            0.03279769136489903
+          ],
+          "p_bootstrap": 0.0
+        },
+        "tuned-bearid": {
+          "point": 0.13209334575425435,
+          "ci95": [
+            0.11208905774481052,
+            0.1547011159301442
+          ],
+          "p_bootstrap": 0.0
+        },
+        "tuned-fused": {
+          "point": 0.010386965318444519,
+          "ci95": [
+            0.004984515735486878,
+            0.016264977127478795
+          ],
+          "p_bootstrap": 0.0
+        }
+      }
+    },
+    "within_zoo": {
+      "n_pos": 53553,
+      "n_neg": 43081,
+      "bootstrap": {
+        "sequence": {
+          "megadescriptor": {
+            "auroc": 0.6223989536883406,
+            "ci95": [
+              0.5921172252825637,
+              0.6551672789889058
+            ]
+          },
+          "bearid": {
+            "auroc": 0.6181589841169346,
+            "ci95": [
+              0.5891511371917078,
+              0.6444885082761539
+            ]
+          },
+          "fused": {
+            "auroc": 0.6635283032244826,
+            "ci95": [
+              0.6341756778445795,
+              0.6916786423729494
+            ]
+          },
+          "bearid-megadescriptor": {
+            "point": -0.004239969571406044,
+            "ci95": [
+              -0.047226687789680845,
+              0.03556258071839281
+            ],
+            "p_bootstrap": 0.794
+          },
+          "fused-megadescriptor": {
+            "point": 0.041129349536142,
+            "ci95": [
+              0.02034962063933773,
+              0.060522790692950704
+            ],
+            "p_bootstrap": 0.0
+          },
+          "fused-bearid": {
+            "point": 0.045369319107548045,
+            "ci95": [
+              0.022101811370480628,
+              0.07080012257256182
+            ],
+            "p_bootstrap": 0.0
+          }
+        },
+        "identity": {
+          "megadescriptor": {
+            "auroc": 0.6223989536883406,
+            "ci95": [
+              0.5581947534999906,
+              0.8217193310635735
+            ]
+          },
+          "bearid": {
+            "auroc": 0.6181589841169346,
+            "ci95": [
+              0.519686559027493,
+              0.6856510925871333
+            ]
+          },
+          "fused": {
+            "auroc": 0.6635283032244826,
+            "ci95": [
+              0.6150469305415754,
+              0.7803329207860333
+            ]
+          },
+          "bearid-megadescriptor": {
+            "point": -0.004239969571406044,
+            "ci95": [
+              -0.2320804892153366,
+              0.10843167923226352
+            ],
+            "p_bootstrap": 0.8875502008032129
+          },
+          "fused-megadescriptor": {
+            "point": 0.041129349536142,
+            "ci95": [
+              -0.057349239671212374,
+              0.09949661052431805
+            ],
+            "p_bootstrap": 0.6144578313253012
+          },
+          "fused-bearid": {
+            "point": 0.045369319107548045,
+            "ci95": [
+              -0.010652019692845033,
+              0.17642922563118887
+            ],
+            "p_bootstrap": 0.14859437751004015
+          }
+        }
+      },
+      "balanced": {
+        "megadescriptor": 0.6351210927584952,
+        "bearid": 0.5651926096115234,
+        "fused": 0.635220521546581
+      },
+      "leave_one_bear_out": [
+        {
+          "dropped": "Charlotte",
+          "megadescriptor": 0.6218958882877772,
+          "bearid": 0.6182379144620825,
+          "fused": 0.6632570875507097,
+          "bearid-megadescriptor": -0.0036579738256946603,
+          "fused-megadescriptor": 0.04136119926293247
+        },
+        {
+          "dropped": "Finja",
+          "megadescriptor": 0.6219094321401917,
+          "bearid": 0.6194315996107863,
+          "fused": 0.6638760732375756,
+          "bearid-megadescriptor": -0.002477832529405366,
+          "fused-megadescriptor": 0.041966641097383905
+        },
+        {
+          "dropped": "Hertha",
+          "megadescriptor": 0.6508641541108465,
+          "bearid": 0.603749313048431,
+          "fused": 0.6737843747386337,
+          "bearid-megadescriptor": -0.04711484106241548,
+          "fused-megadescriptor": 0.022920220627787202
+        },
+        {
+          "dropped": "Larissa",
+          "megadescriptor": 0.627942869357595,
+          "bearid": 0.5967857658575291,
+          "fused": 0.6536949391995681,
+          "bearid-megadescriptor": -0.031157103500065952,
+          "fused-megadescriptor": 0.02575206984197309
+        },
+        {
+          "dropped": "Lloyd",
+          "megadescriptor": 0.6220359222654304,
+          "bearid": 0.6181493319905189,
+          "fused": 0.6632787023109534,
+          "bearid-megadescriptor": -0.00388659027491145,
+          "fused-megadescriptor": 0.041242780045523064
+        },
+        {
+          "dropped": "Milana",
+          "megadescriptor": 0.620591458026726,
+          "bearid": 0.6186983270889359,
+          "fused": 0.662761487548164,
+          "bearid-megadescriptor": -0.0018931309377900885,
+          "fused-megadescriptor": 0.042170029521438
+        },
+        {
+          "dropped": "Nana",
+          "megadescriptor": 0.6208576297803954,
+          "bearid": 0.6195455627674978,
+          "fused": 0.6635860999638297,
+          "bearid-megadescriptor": -0.0013120670128975442,
+          "fused-megadescriptor": 0.042728470183434286
+        },
+        {
+          "dropped": "Nanuq",
+          "megadescriptor": 0.6018707271821576,
+          "bearid": 0.6354536222550158,
+          "fused": 0.6605599889680995,
+          "bearid-megadescriptor": 0.033582895072858165,
+          "fused-megadescriptor": 0.058689261785941915
+        },
+        {
+          "dropped": "Nora",
+          "megadescriptor": 0.6204179489246026,
+          "bearid": 0.6167738350419645,
+          "fused": 0.6614439190477222,
+          "bearid-megadescriptor": -0.003644113882638078,
+          "fused-megadescriptor": 0.04102597012311959
+        },
+        {
+          "dropped": "Sprinter",
+          "megadescriptor": 0.620680092825197,
+          "bearid": 0.618790558533224,
+          "fused": 0.6627872415618329,
+          "bearid-megadescriptor": -0.0018895342919730274,
+          "fused-megadescriptor": 0.0421071487366359
+        },
+        {
+          "dropped": "Tonja",
+          "megadescriptor": 0.6391442540528162,
+          "bearid": 0.5961062660750602,
+          "fused": 0.6611583421089414,
+          "bearid-megadescriptor": -0.04303798797775593,
+          "fused-megadescriptor": 0.02201408805612526
+        },
+        {
+          "dropped": "Vera",
+          "megadescriptor": 0.6027813582306549,
+          "bearid": 0.64859028426835,
+          "fused": 0.6683851030993285,
+          "bearid-megadescriptor": 0.04580892603769504,
+          "fused-megadescriptor": 0.0656037448686736
+        },
+        {
+          "dropped": "Vitus",
+          "megadescriptor": 0.6273771649264631,
+          "bearid": 0.6211913399520508,
+          "fused": 0.669660640701976,
+          "bearid-megadescriptor": -0.006185824974412335,
+          "fused-megadescriptor": 0.042283475775512835
+        }
+      ],
+      "tuned_fusion": {
+        "folds": {
+          "Tiergarten N\u00fcrnberg": {
+            "w_megadescriptor": 0.4,
+            "train_auroc": 0.6744186205363425,
+            "n_test_pairs": 29444
+          },
+          "Tiergarten Sch\u00f6nbrunn": {
+            "w_megadescriptor": 0.5,
+            "train_auroc": 0.6616216845803581,
+            "n_test_pairs": 1448
+          },
+          "Tierpark Berlin": {
+            "w_megadescriptor": 0.55,
+            "train_auroc": 0.6712904650212383,
+            "n_test_pairs": 27306
+          },
+          "Tierpark Neum\u00fcnster": {
+            "w_megadescriptor": 0.6,
+            "train_auroc": 0.6520644193472805,
+            "n_test_pairs": 36619
+          },
+          "Zoo Hannover": {
+            "w_megadescriptor": 0.5,
+            "train_auroc": 0.6640722409937775,
+            "n_test_pairs": 1615
+          },
+          "Zoo Karlsruhe": {
+            "w_megadescriptor": 0.5,
+            "train_auroc": 0.6634573539216992,
+            "n_test_pairs": 202
+          }
+        },
+        "w_grid": [
+          0.0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.35,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.8,
+          0.85,
+          0.9,
+          0.95,
+          1.0
+        ],
+        "auroc": {
+          "megadescriptor": {
+            "auroc": 0.6223989536883406,
+            "ci95": [
+              0.5921172252825637,
+              0.6551672789889058
+            ]
+          },
+          "bearid": {
+            "auroc": 0.6181589841169346,
+            "ci95": [
+              0.5891511371917078,
+              0.6444885082761539
+            ]
+          },
+          "fused": {
+            "auroc": 0.6635283032244826,
+            "ci95": [
+              0.6341756778445795,
+              0.6916786423729494
+            ]
+          },
+          "tuned": {
+            "auroc": 0.6520946172142921,
+            "ci95": [
+              0.6231389177143103,
+              0.6800227397551016
+            ]
+          }
+        },
+        "tuned-megadescriptor": {
+          "point": 0.029695663525951432,
+          "ci95": [
+            0.009632131456380236,
+            0.048724764950874855
+          ],
+          "p_bootstrap": 0.004
+        },
+        "tuned-bearid": {
+          "point": 0.033935633097357476,
+          "ci95": [
+            0.010016766810976383,
+            0.05967040972332654
+          ],
+          "p_bootstrap": 0.0
+        },
+        "tuned-fused": {
+          "point": -0.011433686010190569,
+          "ci95": [
+            -0.016426270540676635,
+            -0.0066416176021662
+          ],
+          "p_bootstrap": 0.0
+        }
+      }
+    }
+  }
+}

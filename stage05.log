@@ -1,0 +1,8 @@
+10:01:41 INFO pbreid.robustness: face_w>=24px: 885 images, 386 sequences, 13 bears (dropped: [])
+10:02:22 INFO pbreid.robustness: [all | sequence bootstrap] Δ BearID−MD -0.108 [-0.139, -0.081]  Δ fused−MD +0.014 [-0.001, +0.028]
+10:03:03 INFO pbreid.robustness: [all | identity bootstrap] Δ BearID−MD -0.108 [-0.169, -0.060]  Δ fused−MD +0.014 [-0.015, +0.034]
+10:04:09 INFO pbreid.robustness: [all] tuned fusion OOF 0.792 (weights on MD by held-out zoo: {np.str_('Tiergarten Nürnberg'): 0.65, np.str_('Tiergarten Schönbrunn'): 0.65, np.str_('Tierpark Berlin'): 0.7, np.str_('Tierpark Neumünster'): 0.65, np.str_('Zoo Hannover'): 0.65, np.str_('Zoo Karlsruhe'): 0.65})
+10:04:18 INFO pbreid.robustness: [within_zoo | sequence bootstrap] Δ BearID−MD -0.004 [-0.047, +0.036]  Δ fused−MD +0.041 [+0.020, +0.061]
+10:04:28 INFO pbreid.robustness: [within_zoo | identity bootstrap] Δ BearID−MD -0.004 [-0.232, +0.108]  Δ fused−MD +0.041 [-0.057, +0.099]
+10:04:42 INFO pbreid.robustness: [within_zoo] tuned fusion OOF 0.652 (weights on MD by held-out zoo: {np.str_('Tiergarten Nürnberg'): 0.4, np.str_('Tiergarten Schönbrunn'): 0.5, np.str_('Tierpark Berlin'): 0.55, np.str_('Tierpark Neumünster'): 0.6, np.str_('Zoo Hannover'): 0.5, np.str_('Zoo Karlsruhe'): 0.5})
+10:04:42 INFO pbreid.robustness: Done. See C:\Users\Connor Sapp\Downloads\polarbear_reid\results\robustness.md

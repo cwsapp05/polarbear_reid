@@ -1,0 +1,65 @@
+# PolarBearVidID: MegaDescriptor (body) vs BearID (face) re-identification experiment
+# All relative paths are resolved against the folder this file lives in.
+
+paths:
+  download_dir: data                        # where the zip is downloaded and extracted
+  data_root: data/PolarBearVidID            # folder that contains animal_db.csv (auto-searched if wrong)
+  work_dir: work                            # intermediate outputs (crops, XML, features)
+  results_dir: results                      # final tables and figures
+  bearid_bin_dir: tools/bearid-dlib/build   # contains bearface, bearchip, bearembed (built by setup_bearid.sh)
+  bearid_models_dir: tools/bearid-models    # contains the .dat networks
+
+dataset:
+  url: "https://zenodo.org/records/7564529/files/PolarBearVidID.zip?download=1"
+  md5: "96ab1d0dbe47624741955f566e69c833"
+  # Sequences are ~100 frames at 12.5 fps, so neighbouring frames are near-duplicates.
+  # Keep every k-th frame of each sequence (10 -> ~13.8k of the 138k frames).
+  frame_stride: 10
+  # How the sequence (video) number is read from a file name. Default mirrors the
+  # wildlife-datasets loader (characters 7:10). If stage 00 reports a sequence count far
+  # from 1431, set a regex with a named group "seq", e.g. '^\d+_(?P<seq>\d+)_'.
+  sequence_regex: null
+  expected: {identities: 13, sequences: 1431, images: 138363}
+
+megadetector:
+  model: MDV5A              # any model name the `megadetector` package knows, or a path to weights
+  conf_threshold: 0.2       # minimum confidence for an "animal" detection
+  pad_frac: 0.05            # padding added around the detected box (fraction of box size)
+  fallback_to_full_image: true   # no detection -> use the original crop instead of dropping the frame
+  force_cpu: false
+
+bearid:
+  face_network: face_allbears.dat     # "all bear species" detector; bearface_network.dat is brown-bear only
+  embed_network: bearembed_network.dat
+  # PolarBearVidID frames are 256x128, so faces are tiny. Crops are resized so their long
+  # side equals this before face detection. Face sizes are converted back to ORIGINAL pixels.
+  upscale_long_side: 512
+  landmark_margin_frac: 0.15          # landmarks must fall inside the face box expanded by this fraction
+  # A frame counts as "face visible" when a face + valid landmarks are found and the face box is
+  # at least this many ORIGINAL pixels wide. Each value defines one evaluation subset.
+  min_face_widths_px: [0, 16, 24, 32]
+  primary_min_face_width_px: 24       # the headline result; choose it from the face-width histogram, not from AUROCs
+  n_workers: 8                        # parallel bearface processes (useful for CPU builds of dlib)
+
+megadescriptor:
+  model: "hf-hub:BVRA/MegaDescriptor-L-384"
+  image_size: 384
+  batch_size: 32
+  num_workers: 4
+  fp16: true
+
+evaluation:
+  similarity:                 # each model's native metric
+    megadescriptor: cosine
+    bearid: neg_euclidean     # dlib metric-learning embeddings are trained on Euclidean distance
+  # Hybrid score on face-visible frames: equal-weight mean of each model's z-scored similarity.
+  # z-scoring uses the mean/std over all frame pairs of the evaluated subset (no labels), and
+  # nothing is tuned, so the fused row needs no held-out data. Added after the first results
+  # showed the two models' errors overlap little; treat it as a secondary analysis.
+  fusion:
+    enabled: true
+  max_frames_per_sequence: 3  # frames per sequence that enter the pairwise evaluation
+  bootstrap_reps: 1000
+  bootstrap_unit: sequence    # sequence | individual (only 13 individuals -> wide intervals)
+  rank_metrics: true          # also report rank-1 accuracy and mAP (leave-one-sequence-out)
+  seed: 0
