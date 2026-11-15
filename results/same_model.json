@@ -1,0 +1,359 @@
+{
+  "primary": {
+    "subset": "face_w>=24px",
+    "n_images": 885,
+    "n_sequences": 386,
+    "n_bears": 13,
+    "negatives": {
+      "all": {
+        "n_pos": 53553,
+        "n_neg": 336906,
+        "auroc": {
+          "megadescriptor": 0.7675238665270046,
+          "megadescriptor_facebox": 0.6274791881172187,
+          "megadescriptor_chip": 0.641040254533757,
+          "bearid": 0.6597933068236553,
+          "fused": 0.7814996872594652
+        },
+        "bootstrap": {
+          "sequence": {
+            "ci95": {
+              "megadescriptor": [
+                0.7469827477889456,
+                0.7896607672058434
+              ],
+              "megadescriptor_facebox": [
+                0.6061673579930721,
+                0.649423311273222
+              ],
+              "megadescriptor_chip": [
+                0.6206226135091362,
+                0.6608924254506082
+              ],
+              "bearid": [
+                0.6386154835061233,
+                0.6804747536836461
+              ],
+              "fused": [
+                0.761506707910089,
+                0.8000105769690261
+              ]
+            },
+            "deltas": {
+              "megadescriptor_facebox-megadescriptor": {
+                "point": -0.14004467840978585,
+                "ci95": [
+                  -0.16585028701908391,
+                  -0.11456094980877304
+                ],
+                "p_bootstrap": 0.0
+              },
+              "megadescriptor_chip-megadescriptor": {
+                "point": -0.12648361199324754,
+                "ci95": [
+                  -0.15082795977629782,
+                  -0.10303662562840658
+                ],
+                "p_bootstrap": 0.0
+              },
+              "megadescriptor_chip-megadescriptor_facebox": {
+                "point": 0.013561066416538314,
+                "ci95": [
+                  0.0010117399871196508,
+                  0.026155582128451545
+                ],
+                "p_bootstrap": 0.022
+              },
+              "bearid-megadescriptor_chip": {
+                "point": 0.01875305228989832,
+                "ci95": [
+                  -0.005099361349293569,
+                  0.039563980032097844
+                ],
+                "p_bootstrap": 0.13
+              },
+              "bearid-megadescriptor_facebox": {
+                "point": 0.032314118706436634,
+                "ci95": [
+                  0.008438896803350502,
+                  0.05362923414032277
+                ],
+                "p_bootstrap": 0.01
+              },
+              "bearid-megadescriptor": {
+                "point": -0.10773055970334922,
+                "ci95": [
+                  -0.13929882100961705,
+                  -0.08052802803831878
+                ],
+                "p_bootstrap": 0.0
+              }
+            }
+          },
+          "identity": {
+            "ci95": {
+              "megadescriptor": [
+                0.7116480389721648,
+                0.8207284871705535
+              ],
+              "megadescriptor_facebox": [
+                0.5941844599542226,
+                0.6717324319023029
+              ],
+              "megadescriptor_chip": [
+                0.6120887438708161,
+                0.6756115996622316
+              ],
+              "bearid": [
+                0.6168970122673669,
+                0.6925863481493882
+              ],
+              "fused": [
+                0.7194670429022236,
+                0.824517643182539
+              ]
+            },
+            "deltas": {
+              "megadescriptor_facebox-megadescriptor": {
+                "point": -0.14004467840978585,
+                "ci95": [
+                  -0.19904561287797076,
+                  -0.08211796303986163
+                ],
+                "p_bootstrap": 0.0
+              },
+              "megadescriptor_chip-megadescriptor": {
+                "point": -0.12648361199324754,
+                "ci95": [
+                  -0.1772235408654359,
+                  -0.07241653634876132
+                ],
+                "p_bootstrap": 0.0
+              },
+              "megadescriptor_chip-megadescriptor_facebox": {
+                "point": 0.013561066416538314,
+                "ci95": [
+                  -0.004515083454334523,
+                  0.029344892689940727
+                ],
+                "p_bootstrap": 0.148
+              },
+              "bearid-megadescriptor_chip": {
+                "point": 0.01875305228989832,
+                "ci95": [
+                  -0.022427394685660223,
+                  0.039142509512106904
+                ],
+                "p_bootstrap": 0.326
+              },
+              "bearid-megadescriptor_facebox": {
+                "point": 0.032314118706436634,
+                "ci95": [
+                  -0.009453513047788053,
+                  0.05742986824914913
+                ],
+                "p_bootstrap": 0.13
+              },
+              "bearid-megadescriptor": {
+                "point": -0.10773055970334922,
+                "ci95": [
+                  -0.1690867519000265,
+                  -0.06041869882558871
+                ],
+                "p_bootstrap": 0.0
+              }
+            }
+          }
+        }
+      },
+      "within_zoo": {
+        "n_pos": 53553,
+        "n_neg": 43081,
+        "auroc": {
+          "megadescriptor": 0.6223989536883406,
+          "megadescriptor_facebox": 0.5865080940442879,
+          "megadescriptor_chip": 0.5799714149971947,
+          "bearid": 0.6181589841169346,
+          "fused": 0.6635283032244826
+        },
+        "bootstrap": {
+          "sequence": {
+            "ci95": {
+              "megadescriptor": [
+                0.5921172252825637,
+                0.6551672789889058
+              ],
+              "megadescriptor_facebox": [
+                0.5592434737062981,
+                0.6104888133167958
+              ],
+              "megadescriptor_chip": [
+                0.5536482934629081,
+                0.6036079592925858
+              ],
+              "bearid": [
+                0.5891511371917078,
+                0.6444885082761539
+              ],
+              "fused": [
+                0.6341756778445795,
+                0.6916786423729494
+              ]
+            },
+            "deltas": {
+              "megadescriptor_facebox-megadescriptor": {
+                "point": -0.0358908596440527,
+                "ci95": [
+                  -0.07223689123395316,
+                  -0.0024040701799026673
+                ],
+                "p_bootstrap": 0.048
+              },
+              "megadescriptor_chip-megadescriptor": {
+                "point": -0.042427538691145905,
+                "ci95": [
+                  -0.0781725115199139,
+                  -0.010383400464353881
+                ],
+                "p_bootstrap": 0.004
+              },
+              "megadescriptor_chip-megadescriptor_facebox": {
+                "point": -0.006536679047093208,
+                "ci95": [
+                  -0.021573143979217436,
+                  0.0095519617002197
+                ],
+                "p_bootstrap": 0.412
+              },
+              "bearid-megadescriptor_chip": {
+                "point": 0.03818756911973986,
+                "ci95": [
+                  0.007568706281813018,
+                  0.06547556389663538
+                ],
+                "p_bootstrap": 0.012
+              },
+              "bearid-megadescriptor_facebox": {
+                "point": 0.031650890072646654,
+                "ci95": [
+                  -0.0002497059341499949,
+                  0.06309645599622173
+                ],
+                "p_bootstrap": 0.052
+              },
+              "bearid-megadescriptor": {
+                "point": -0.004239969571406044,
+                "ci95": [
+                  -0.047226687789680845,
+                  0.03556258071839281
+                ],
+                "p_bootstrap": 0.794
+              }
+            }
+          },
+          "identity": {
+            "ci95": {
+              "megadescriptor": [
+                0.5581947534999906,
+                0.8217193310635735
+              ],
+              "megadescriptor_facebox": [
+                0.5312719212860064,
+                0.7119860802393847
+              ],
+              "megadescriptor_chip": [
+                0.5467118906206128,
+                0.7476790408005973
+              ],
+              "bearid": [
+                0.519686559027493,
+                0.6856510925871333
+              ],
+              "fused": [
+                0.6150469305415754,
+                0.7803329207860333
+              ]
+            },
+            "deltas": {
+              "megadescriptor_facebox-megadescriptor": {
+                "point": -0.0358908596440527,
+                "ci95": [
+                  -0.1780213559946343,
+                  0.04437211016465707
+                ],
+                "p_bootstrap": 0.42771084337349397
+              },
+              "megadescriptor_chip-megadescriptor": {
+                "point": -0.042427538691145905,
+                "ci95": [
+                  -0.13084720343979012,
+                  0.03472195564921622
+                ],
+                "p_bootstrap": 0.3192771084337349
+              },
+              "megadescriptor_chip-megadescriptor_facebox": {
+                "point": -0.006536679047093208,
+                "ci95": [
+                  -0.026667340112255744,
+                  0.06985783680831979
+                ],
+                "p_bootstrap": 0.6024096385542169
+              },
+              "bearid-megadescriptor_chip": {
+                "point": 0.03818756911973986,
+                "ci95": [
+                  -0.14959976693897978,
+                  0.08700408952538624
+                ],
+                "p_bootstrap": 0.6847389558232931
+              },
+              "bearid-megadescriptor_facebox": {
+                "point": 0.031650890072646654,
+                "ci95": [
+                  -0.10800924939843469,
+                  0.08335954408188645
+                ],
+                "p_bootstrap": 0.6666666666666666
+              },
+              "bearid-megadescriptor": {
+                "point": -0.004239969571406044,
+                "ci95": [
+                  -0.2320804892153366,
+                  0.10843167923226352
+                ],
+                "p_bootstrap": 0.8875502008032129
+              }
+            }
+          }
+        }
+      }
+    },
+    "ranking": {
+      "megadescriptor": {
+        "rank1": 0.8124293785310734,
+        "mAP": 0.44245470034600043,
+        "n_queries": 885
+      },
+      "megadescriptor_facebox": {
+        "rank1": 0.6689265536723163,
+        "mAP": 0.28531100500258266,
+        "n_queries": 885
+      },
+      "megadescriptor_chip": {
+        "rank1": 0.7288135593220338,
+        "mAP": 0.2975828926357756,
+        "n_queries": 885
+      },
+      "bearid": {
+        "rank1": 0.631638418079096,
+        "mAP": 0.29847819362708866,
+        "n_queries": 885
+      },
+      "fused": {
+        "rank1": 0.8632768361581921,
+        "mAP": 0.4676131634216873,
+        "n_queries": 885
+      }
+    }
+  }
+}

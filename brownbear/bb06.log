@@ -1,0 +1,7 @@
+11:23:45 INFO pbreid.bb.ladder: [2017] queries 778 (faces 439), gallery 2068 | head val acc 0.873 | r1 all: md 0.121  bearid 0.063  poseswin 0.676  poseswin_filtered 0.613  md_head 0.220  md_head_faces 0.156  bearid_head 0.082
+11:24:05 INFO pbreid.bb.ladder: [2018] queries 561 (faces 314), gallery 2288 | head val acc 0.861 | r1 all: md 0.096  bearid 0.053  poseswin 0.684  poseswin_filtered 0.627  md_head 0.225  md_head_faces 0.148  bearid_head 0.084
+11:24:25 INFO pbreid.bb.ladder: [2019] queries 627 (faces 324), gallery 2200 | head val acc 0.864 | r1 all: md 0.093  bearid 0.054  poseswin 0.718  poseswin_filtered 0.627  md_head 0.239  md_head_faces 0.140  bearid_head 0.078
+11:24:44 INFO pbreid.bb.ladder: [2020] queries 551 (faces 329), gallery 2350 | head val acc 0.864 | r1 all: md 0.083  bearid 0.062  poseswin 0.739  poseswin_filtered 0.686  md_head 0.201  md_head_faces 0.131  bearid_head 0.082
+11:25:02 INFO pbreid.bb.ladder: [2021] queries 763 (faces 440), gallery 2075 | head val acc 0.875 | r1 all: md 0.083  bearid 0.058  poseswin 0.780  poseswin_filtered 0.708  md_head 0.262  md_head_faces 0.149  bearid_head 0.079
+11:25:20 INFO pbreid.bb.ladder: [2022] queries 440 (faces 248), gallery 2374 | head val acc 0.857 | r1 all: md 0.077  bearid 0.048  poseswin 0.639  poseswin_filtered 0.570  md_head 0.182  md_head_faces 0.125  bearid_head 0.066
+11:25:23 INFO pbreid.bb.ladder: Done. See C:\Users\Connor Sapp\Downloads\polarbear_reid\brownbear\results\ladder.md
