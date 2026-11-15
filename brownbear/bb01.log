@@ -1,0 +1,11 @@
+23:58:31 INFO pbreid.bb.bearid: bearface shard 5/8 done (492 images)
+23:59:19 INFO pbreid.bb.bearid: bearface shard 7/8 done (492 images)
+23:59:31 INFO pbreid.bb.bearid: bearface shard 1/8 done (493 images)
+23:59:32 INFO pbreid.bb.bearid: bearface shard 3/8 done (493 images)
+23:59:33 INFO pbreid.bb.bearid: bearface shard 6/8 done (492 images)
+23:59:36 INFO pbreid.bb.bearid: bearface shard 2/8 done (493 images)
+23:59:42 INFO pbreid.bb.bearid: bearface shard 8/8 done (492 images)
+23:59:49 INFO pbreid.bb.bearid: bearface shard 4/8 done (492 images)
+23:59:49 INFO pbreid.bb.bearid: Images 3939 | any face 2203 (55.9%) | valid landmarks 2203 (55.9%) | face width / crop width: median 0.62
+00:00:19 INFO pbreid.bb.bearid: bearchip produced 2203 chips
+00:05:14 INFO pbreid.bb.bearid: Saved 2203 BearID embeddings (1736 of 3939 images unmapped/no face)

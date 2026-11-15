@@ -126,8 +126,8 @@ def detect_faces(cfg: dict, image_paths: list[str], out_dir: Path, n_workers: in
     return faces
 
 
-def best_face(faces: list[dict], margin: float) -> tuple[dict | None, bool, float]:
-    """Pick the largest face; check that all 6 landmarks lie inside the (expanded) face box.
+def best_face(faces: list[dict], margin: float, required=LANDMARKS) -> tuple[dict | None, bool, float]:
+    """Pick the largest face; check that the `required` landmarks (default: all 6) lie inside the (expanded) face box.
 
     Returns (face, landmarks_ok, eye_distance / face_width).
     """
@@ -139,7 +139,7 @@ def best_face(faces: list[dict], margin: float) -> tuple[dict | None, bool, floa
         name in f["parts"]
         and f["left"] - mx <= f["parts"][name][0] <= f["left"] + f["width"] + mx
         and f["top"] - my <= f["parts"][name][1] <= f["top"] + f["height"] + my
-        for name in LANDMARKS)
+        for name in required)
     eye = np.nan
     if "leye" in f["parts"] and "reye" in f["parts"]:
         eye = float(np.hypot(*np.subtract(f["parts"]["leye"], f["parts"]["reye"])) / max(f["width"], 1))

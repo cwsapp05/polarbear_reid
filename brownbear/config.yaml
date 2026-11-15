@@ -1,0 +1,39 @@
+# Brown bear (McNeil River, Rosenberg/Zhou/.../A. Mathis) head-crop dataset: MegaDescriptor vs BearID.
+# Relative paths resolve against this folder.
+paths:
+  data_root: "D:/Temporary Downloads Nov 2026/Public_release/Public_release"   # holds images/ and data/reid_annotations/
+  work_dir: work
+  results_dir: results
+  bearid_bin_dir: ../tools/bearid-dlib/build
+  bearid_models_dir: ../tools/bearid-models
+
+sampling:
+  # An "encounter" = one bear on one day. Photos within an encounter are often bursts, so pairs
+  # inside one encounter are never scored (the analogue of same-sequence pairs in PolarBearVidID).
+  images_per_encounter: 2
+  seed: 0
+
+bearid:
+  face_network: bearface_network.dat  # BearID's brown-bear face detector (native species)
+  embed_network: bearembed_network.dat
+  # Head crops are faces filling the frame; bearface finds faces more reliably with some context,
+  # so each crop is resized (long side) and padded with grey on every side before detection.
+  input_long_side: 384
+  pad_frac: 0.2
+  landmark_margin_frac: 0.15
+  # bearchip aligns on eyes + nose. On tight head crops bearface puts head_top above the face box,
+  # which failed the all-six check on most frontal faces in the 100-image smoke test, so only the
+  # alignment landmarks are required here (chosen from detection behaviour, before any scoring).
+  required_landmarks: [leye, reye, nose]
+  n_workers: 8
+
+megadescriptor:
+  model: "hf-hub:BVRA/MegaDescriptor-L-384"
+  image_size: 384
+  batch_size: 32
+  num_workers: 4
+  fp16: true
+
+evaluation:
+  bootstrap_reps: 1000
+  seed: 0

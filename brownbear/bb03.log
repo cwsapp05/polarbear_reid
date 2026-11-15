@@ -1,0 +1,8 @@
+00:05:36 INFO pbreid.bb.eval: BearID coverage: 2203 / 3939
+00:15:24 INFO pbreid.bb.eval: [bearid_ok | all] pos 38020 neg 2362584 | MegaDescriptor: 0.603  BearID: 0.675  Fused: 0.678
+00:16:55 INFO pbreid.bb.eval: [bearid_ok | same_year] pos 7859 neg 405884 | MegaDescriptor: 0.623  BearID: 0.707  Fused: 0.706
+00:25:19 INFO pbreid.bb.eval: [bearid_ok | cross_year] pos 30161 neg 1956700 | MegaDescriptor: 0.598  BearID: 0.667  Fused: 0.671
+00:30:46 INFO pbreid.bb.eval: [all_frames | all] pos 119181 neg 7634762 | MegaDescriptor: 0.580
+00:31:39 INFO pbreid.bb.eval: [all_frames | same_year] pos 24334 neg 1309387 | MegaDescriptor: 0.597
+00:36:06 INFO pbreid.bb.eval: [all_frames | cross_year] pos 94847 neg 6325375 | MegaDescriptor: 0.576
+00:36:09 INFO pbreid.bb.eval: Done. See C:\Users\Connor Sapp\Downloads\polarbear_reid\brownbear\results\summary.md
